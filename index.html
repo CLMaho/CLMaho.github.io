@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<!--This is the Master Page, most (if not all) of the others are descended/copied from this one. It is still a WIP-->
+<html>
+<head><title>[Prototype]</title>
+<!--Most of the style code was directly inspired by Mrs. Woodside's Adv. Computers "  achtmlcsswebsite" project. Mostly because everything else wasn't working; stick with the tried and true, eh? This is also why the CSS is embeeded and not seperate.-->
+<style>
+	body{
+		display: grid;
+		grid-template-areas:
+		"header header header"
+		"text text nav"
+		"text text nav"
+		"text text path"
+		"footer1 footer footer";
+		grid-template-rows: 80px 1fr 1fr 3fr 1fr;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-gap: 1em;
+		grid-auto-rows: minmax:(200px auto);
+		margin: 3em;
+	}
+	h1 {
+	font: 42px Georgia, Serif;
+	margin: 0 0 10px 0;
+	}
+	header, title, nav, text, path, footer{
+		padding:20px;
+		background: rgba(192,192,192,0.5);
+  		-webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  		-moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+ 		 box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+
+	}
+	#pageHeader{
+		text-align:center;
+		grid-area:header;
+	}
+	#mainTitle{
+		grid-area:title;
+	}
+	#mainNav{
+		grid-area:nav;
+	}
+	#mainText{
+		grid-area:text;
+	}
+	#mainPath{
+		grid-area:path;
+	}
+	
+	#pageFooter{
+		grid-area:footer;
+	}
+	#pageInfo{
+		grid-area:footer1;
+	}
+		h1{
+			color: #black;
+		}
+		h1, p{
+			font-family:Arial;
+		}
+	#mainUbiqu{
+    color: inherit;
+    text-decoration: none;
+}
+.button {
+	background-color:#5a5c5e;
+	color: gray;
+    border: none;
+    padding: 4px 6px;
+    width:8em;
+    text-align: center;
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    font-size: 14px;
+}
+.buttonColor{
+	background-color:#5a5c5e;
+}
+</style>
+</head>
+<body bgcolor=#3e557a>
+<header id=pageHeader><h1>[Placeholder]</h1></header>
+<title id=mainTitle>[Placeholder]</title>
+<nav id=mainNav><p>Navigation
+Menu</p>
+<!--I wanted the links stacked atop eachother and the first thing that came to mind was <ul>. I'm using an unbulleted list because I feel bullets would ruin the style effect. On a side note I found that <pre> made the textfont Times New Roman.-->
+<ul style="list-style-type:none">
+  <li><button><a class="button buttonColor" href="[placeholder]">Home Page</a></button></li>
+  <!--I want to get rid of the link style within the button so that they all match, but I don't know how... Nevermind! It's finished now!-->
+  <li><button><a class="button buttonColor" href="StartPage.html">Start Page</a></button></li>
+  <li><button onclick="goBack()"><a class="button buttonColor">Go Back</a></button>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</li>
+</ul>
+</nav>
+<footer id=pageInfo>[Placeholder]</footer>
+<text id=mainText>
+	<!--"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" It looks more than a fair bit ugly in the code, but it provides an indent in <p>. I refrained from using <pre> so the text would automatically wrap (and Times New Roman; see above). I wonder if <br> could function inside of <p> as a paragraph break...-->
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum atque culpa optio harum aliquam sed qui tenetur cumque molestias, asperiores incidunt, rem accusantium reprehenderit alias accusamus quasi! Debitis, nesciunt, quia?
+	<br>
+		<!--It does apparently. MLA styled websites are a thing so I should've seen it coming.-->
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quia placeat molestias ipsam maxime architecto corporis vitae explicabo. Dolore consectetur tempora repudiandae, delectus, id accusantium? Impedit atque vitae eligendi, repudiandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laborum nesciunt cumque repellat neque commodi ad rerum, quibusdam vero et distinctio quae optio ullam, consectetur repellendus quam magni id fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique enim incidunt laborum aspernatur aperiam quae sint obcaecati perferendis nesciunt, delectus alias beatae molestiae excepturi numquam dolore illo est ratione harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, dolorem ullam pariatur officia expedita odio suscipit rerum consequuntur mollitia eum ducimus dolorum porro obcaecati tempora maxime non laborum illio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim accusantium ea sequi iure, ipsum repudiandae, blanditiis pariatur officiis, dolor totam sint doloremque aspernatur! Natus ab eveniet dolore perferendis at. Lorem</p></text>
+	<footer id=pageFooter>[Placeholder]</footer>
+	<!--Honestly, I don't know if I will actually include the "path" grid square as an actual block showing the path history. It would be fairly complicated to write (and/or tedious). The first thought that comes to mind is manually coding in the path, adding to it on each page, essentially making it a set of links. This would be a larger and larger hassle as the projet gets bigger.-->
+	<path id=mainPath>[Path vs. No path]</path>
+</body>
+</html>
