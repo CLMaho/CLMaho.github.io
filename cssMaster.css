@@ -1,0 +1,29 @@
+.button {
+    display: block;
+    height: 30px;
+    width: 90px;
+    background: rgba(192, 192, 192, 0.5);
+    border: 2px solid rgba(192, 192, 192, 0.3);
+    color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    font: bold 1em/27px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    background: -webkit-linear-gradient(top, #364a69, #3e557a);
+    background: -moz-linear-gradient(top, #364a69, #3e557a);
+    background: -o-linear-gradient(top, #364a69, #3e557a);
+    background: -ms-linear-gradient(top, #364a69, #3e557a);
+    background: linear-gradient(top, #364a69, #3e557a);
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    padding:5px;
+}
+a.button {
+    text-decoration: none;
+    width: 10em;
+}
+a.button:hover {
+    background: #3d7a80;
+    background: -webkit-linear-gradient(top, #47618b, #506d9c);
+    background: -moz-linear-gradient(top, #47618b, #506d9c);
+    background: -o-linear-gradient(top, #47618b, #506d9c);
+    background: -ms-linear-gradient(top, #47618b, #506d9c);
+    background: linear-gradient(top, #47618b, #506d9c);
+}

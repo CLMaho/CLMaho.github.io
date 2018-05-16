@@ -1,113 +1,101 @@
-<!DOCTYPE html>
-<!--This is the Master Page, most (if not all) of the others are descended/copied from this one. It is still a WIP-->
+<!DOCTYPYE html>
 <html>
-<head><title>[Prototype]</title>
-<!--Most of the style code was directly inspired by Mrs. Woodside's Adv. Computers "  achtmlcsswebsite" project. Mostly because everything else wasn't working; stick with the tried and true, eh? This is also why the CSS is embeeded and not seperate.-->
+<head><title>[Home]?</title>
 <style>
 	body{
 		display: grid;
 		grid-template-areas:
 		"header header header"
-		"text text nav"
-		"text text nav"
-		"text text path"
-		"footer1 footer footer";
+		"text text text"
+		"text text text"
+		"text text text"
+		"footer footer footer";
 		grid-template-rows: 80px 1fr 1fr 3fr 1fr;
 		grid-template-columns: 1fr 2fr 1fr;
 		grid-gap: 1em;
 		grid-auto-rows: minmax:(200px auto);
 		margin: 3em;
 	}
+	h1, p{
+		font-family: Arial;
+	}
 	h1 {
-	font: 42px Georgia, Serif;
+	font: 40px Georgia, Serif;
 	margin: 0 0 10px 0;
 	}
-	header, title, nav, text, path, footer{
-		padding:20px;
-		background: rgba(192,192,192,0.5);
-  		-webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+header, text, footer{
+	padding:20px;
+	background: rgba(192, 192, 192, 0.5);
+	-webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
   		-moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
  		 box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
-
-	}
-	#pageHeader{
+}
+#pageHeader{
 		text-align:center;
 		grid-area:header;
-	}
-	#mainTitle{
-		grid-area:title;
-	}
-	#mainNav{
-		grid-area:nav;
-	}
-	#mainText{
+}
+#mainText{
 		grid-area:text;
-	}
-	#mainPath{
-		grid-area:path;
-	}
-	
-	#pageFooter{
-		grid-area:footer;
-	}
-	#pageInfo{
-		grid-area:footer1;
-	}
-		h1{
-			color: #black;
-		}
-		h1, p{
-			font-family:Arial;
-		}
-	#mainUbiqu{
-    color: inherit;
-    text-decoration: none;
+}
+#pageFooter{
+	grid-area: footer;
+	text-align: center;
 }
 .button {
-	background-color:#5a5c5e;
-	color: gray;
-    border: none;
-    padding: 4px 6px;
-    width:8em;
+	
+    display: block;
+    height: 30px;
+    width: 90px;
+    background: rgba(192, 192, 192, 0.5);
+    border: 2px solid rgba(192, 192, 192, 0.3);
+    color: rgba(0, 0, 0, 0.55);
     text-align: center;
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
-    font-size: 14px;
+    font: bold 1em/27px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    background: -webkit-linear-gradient(top, #364a69, #3e557a);
+    background: -moz-linear-gradient(top, #364a69, #3e557a);
+    background: -o-linear-gradient(top, #364a69, #3e557a);
+    background: -ms-linear-gradient(top, #364a69, #3e557a);
+    background: linear-gradient(top, #364a69, #3e557a);
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    padding:5px;
 }
-.buttonColor{
-	background-color:#5a5c5e;
+a.button {
+    text-decoration: none;
+    width: 10em;
+}
+a.button:hover {
+    background: rgba(192, 192, 192, 0.5);
+    background: -webkit-linear-gradient(top, #47618b, #506d9c);
+    background: -moz-linear-gradient(top, #47618b, #506d9c);
+    background: -o-linear-gradient(top, #47618b, #506d9c);
+    background: -ms-linear-gradient(top, #47618b, #506d9c);
+    background: linear-gradient(top, #47618b, #506d9c);
 }
 </style>
 </head>
-<body bgcolor=#3e557a>
-<header id=pageHeader><h1>[Placeholder]</h1></header>
-<title id=mainTitle>[Placeholder]</title>
-<nav id=mainNav><p>Navigation
-Menu</p>
-<!--I wanted the links stacked atop eachother and the first thing that came to mind was <ul>. I'm using an unbulleted list because I feel bullets would ruin the style effect. On a side note I found that <pre> made the textfont Times New Roman.-->
-<ul style="list-style-type:none">
-  <li><button><a class="button buttonColor" href="[placeholder]">Home Page</a></button></li>
-  <!--I want to get rid of the link style within the button so that they all match, but I don't know how... Nevermind! It's finished now!-->
-  <li><button><a class="button buttonColor" href="StartPage.html">Start Page</a></button></li>
-  <li><button onclick="goBack()"><a class="button buttonColor">Go Back</a></button>
-<script>
-function goBack() {
-    window.history.back();
-}
-</script>
-</li>
-</ul>
-</nav>
-<footer id=pageInfo>[Placeholder]</footer>
+<Body bgcolor=#3e557a>
+<header id=pageHeader><h1>Home</h1></header>
 <text id=mainText>
-	<!--"&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;" It looks more than a fair bit ugly in the code, but it provides an indent in <p>. I refrained from using <pre> so the text would automatically wrap (and Times New Roman; see above). I wonder if <br> could function inside of <p> as a paragraph break...-->
-	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum atque culpa optio harum aliquam sed qui tenetur cumque molestias, asperiores incidunt, rem accusantium reprehenderit alias accusamus quasi! Debitis, nesciunt, quia?
+	<p><center><h3>MWAHAHAHAHA FOOLS!</h3></center></p>
+	<p><center>I mean, welcome perfectly respectably beings: welcome to the Pointless Adventure!
+		<br>
+		<b>Legal text following:</b>
+		<br>
+		<br>
+	<small>This and the following is part of a text based CYOA (Choose Your Own Adventure) story; currently imcomplete. Any and all events represented in the work are not directly related to or representing the actions of any persons, living or dead, and/or events past/present/future. I, the artist (or any other persons), should not profit from this work in any way. Any materials not belonging to me [the artist] should be assumed belonging to others and should not be used in any profitable manner.
+		<br>
+	Most of the code was "derived from/thought of by" others but I claim responsibility for the horrible amalgation they [the constituent pieces] form. Aka. The following website.</small>
 	<br>
-		<!--It does apparently. MLA styled websites are a thing so I should've seen it coming.-->
-	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis quia placeat molestias ipsam maxime architecto corporis vitae explicabo. Dolore consectetur tempora repudiandae, delectus, id accusantium? Impedit atque vitae eligendi, repudiandae! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem laborum nesciunt cumque repellat neque commodi ad rerum, quibusdam vero et distinctio quae optio ullam, consectetur repellendus quam magni id fuga. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique enim incidunt laborum aspernatur aperiam quae sint obcaecati perferendis nesciunt, delectus alias beatae molestiae excepturi numquam dolore illo est ratione harum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto numquam, dolorem ullam pariatur officia expedita odio suscipit rerum consequuntur mollitia eum ducimus dolorum porro obcaecati tempora maxime non laborum illio! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet enim accusantium ea sequi iure, ipsum repudiandae, blanditiis pariatur officiis, dolor totam sint doloremque aspernatur! Natus ab eveniet dolore perferendis at. Lorem</p></text>
-	<footer id=pageFooter>[Placeholder]</footer>
-	<!--Honestly, I don't know if I will actually include the "path" grid square as an actual block showing the path history. It would be fairly complicated to write (and/or tedious). The first thought that comes to mind is manually coding in the path, adding to it on each page, essentially making it a set of links. This would be a larger and larger hassle as the projet gets bigger.-->
-	<path id=mainPath>[Path vs. No path]</path>
-</body>
-</html>
+	<br><b>Legalities done.</b>
+</center></p>
+<br>
+<p><center>After taking suitable time to prepare yourself for bad writing and worse coding click the button located below the progress indicator.</p>
+	<br>
+	<br>
+	<br>
+	<h2>2/?</h2></center>
+</text>
+<start id=pageFooter>
+	<p><h5>The Button...</h5></p>
+<center><a class=button href=1start.html>Begin!</a></center>
+</footer>

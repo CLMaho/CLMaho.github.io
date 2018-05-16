@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head><title>Pointless</title>
+<style>
+	body{
+		display: grid;
+		grid-template-areas:
+		"header header header"
+		"text text nav"
+		"text text nav"
+		"text text path"
+		"footer2 footer1 footer3";
+		grid-template-rows: 80px 1fr 1fr 3fr 1fr;
+		grid-template-columns: 3fr 6fr 3fr;
+		grid-gap: 1em;
+		grid-auto-rows: minmax:(200px auto);
+		margin: 3em;
+	}
+	h1 {
+	font: 40px Georgia, Serif;
+	margin: 0 0 10px 0;
+	}
+	header, nav, text, path, footer{
+		padding:20px;
+		background: rgba(192,192,192,0.5);
+  		-webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  		-moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+ 		 box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+
+	}
+	#pageHeader{
+		text-align:center;
+		grid-area:header;
+	}
+	#mainNav{
+		grid-area:nav;
+	}
+	#mainText{
+		grid-area:text;
+
+	}
+	#mainPath{
+		grid-area:path;
+	}
+	
+	#pageLeft{
+		grid-area:footer2;
+	}
+	#pageRight{
+		grid-area:footer3;
+	}
+		h1{
+			color: #black;
+		}
+		h1, p{
+			font-family:Arial;
+		}
+	
+.button {
+    display: block;
+    height: 30px;
+    width: 90px;
+    background: rgba(192, 192, 192, 0.5);
+    border: 2px solid rgba(192, 192, 192, 0.3);
+    color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    font: bold 1em/27px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    background: -webkit-linear-gradient(top, #364a69, #3e557a);
+    background: -moz-linear-gradient(top, #364a69, #3e557a);
+    background: -o-linear-gradient(top, #364a69, #3e557a);
+    background: -ms-linear-gradient(top, #364a69, #3e557a);
+    background: linear-gradient(top, #364a69, #3e557a);
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    padding:5px;
+}
+a.button {
+    text-decoration: none;
+    width: 10em;
+}
+a.button:hover {
+    background: #3d7a80;
+    background: -webkit-linear-gradient(top, #47618b, #506d9c);
+    background: -moz-linear-gradient(top, #47618b, #506d9c);
+    background: -o-linear-gradient(top, #47618b, #506d9c);
+    background: -ms-linear-gradient(top, #47618b, #506d9c);
+    background: linear-gradient(top, #47618b, #506d9c);
+}
+.buttonRight{
+	grid-column: 4/6;
+	grid-row: 3;
+}
+</style>
+</head>
+<body bgcolor=#3e557a>
+<header id=pageHeader><h1>Enter the Point!</h1></header>
+<title id=mainTitle>[Placeholder]</title>
+<nav id=mainNav><p>Navigation
+Menu</p>
+</head>
+<ul style="list-style-type:none">
+  <li><a class=button href="[placeholder]">Home Page</a></li>
+  <li><a class=button href="StartPage.html">Start Page</a></li>
+  <li><a class=button href=goBack() rel=nofollow”>Go Back</a>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</li>
+</ul>
+</nav>
+<footer id=pageInfo>[Placeholder]</footer>
+<text id=mainText>
+	<p>The point, you deduce, cannot simply be a point. It has to be something more than just a singular dimension!</p>
+	<br>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It exists in a three dimensional, well, dimension after all, therefore it would have to HAVE to be three dimensional in some manner. Right? Either that or it is some outlandish phenomenon with an equally unlikely explanation. Like a hole in an alien cloaking device, a phantasm created in a whirling ESP stew, the beginning of the chicken uprising, an extra dimensional door to the waiting lobby of the worlds leading toothbrush corporation! The possibilities are endless!</p>
+	<br>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It could also simply be exactly what it seems to be, a point lacking height, depth and width, that violates at least three natural laws and throws the concept physics itself into the trashcan. That's the pessimist talking you're sure because Occam's razor- under the wise leadership of your mind- says it is the doorway to the toothbrush lobby. Emboldened by this new logic you decide to enter the "point". However this raises another quandary; how does one enter an extra dimensional doorway to a waiting lobby? Step through it? No, that won't work. Maybe say a passphrase? Or preform a secret ritual? Wait, what if you detonated a live warp core next to the point... that's how they open these things in the movies. It would work, right?</p>
+	<br>
+	<p>You don't seem to have a warp core with you though... Shame.</p>
+	<br>
+	<p>Looks like stepping into the point is the best option then.</p>
+	<br>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You take a step back and ready yourself. Thus prepared, you raise your foot and start its descent towards what must be a portal of some nature; however, fate has other plans. As your left foot starts descending towards the ground you manage to do what you thought was impossible not a second ago...</p>
+	<br>
+	<p>Your stationary right foot trips on floor.</p>
+	<br>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unfortunately for you, the laws of physics apply to your body- quite unlike the point- and you fall forward: your body decides to follow your foot towards the floor. Multitudes of thoughts flash through your mind during your impromptu descent. Thoughts like: "Would the toast map have been better?", "If the Earth is flat, why do we have oceans?", and "Spoons are lies". Whilst part of your mind ponders these philosophical dilemmas the rest of your brain is dedicated to your impending doom: the floor rushing towards you at speeds previously unthinkable. You take consolation in the fact that, while it certainly appears to be a floor, it is naught but an illusion created by the dimension warping by the tesseract leading to the toothbrush lobby. Simply put, there is no floor. Since there is no floor, you cannot hit the floor and bash your nose into it. </p>
+	<br>
+	<p>This theory is disproved when your nose does in fact meet the floor. You don't remember much after that.</p>
+	<br>
+	<p>When you finally peel yourself off of the ground, you can only guess near an hour has passed: your surroundings don't show the passage of time.</p>
+	<br>
+	<footer id=pageLeft><a class=button href="[leftOp]">[unwritten]</a></footer>
+	<footer id=pageRight><a class=button href="A2.html">Enter the Point!</a>
+	</footer>
+	<!--Honestly, I don't know if I will actually include the "path" grid square as an actual block showing the path history. It would be fairly complicated to write (and/or tedious). The first thought that comes to mind is manually coding in the path, adding to it on each page, essentially making it a set of links. This would be a larger and larger hassle as the projet gets bigger.-->
+	<path id=mainPath>[Path vs. No path]</path>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head><title>Pointless</title>
+<style>
+	body{
+		display: grid;
+		grid-template-areas:
+		"header header header"
+		"text text nav"
+		"text text nav"
+		"text text path"
+		"footer2 footer1 footer3";
+		grid-template-rows: 80px 1fr 1fr 3fr 1fr;
+		grid-template-columns: 3fr 6fr 3fr;
+		grid-gap: 1em;
+		grid-auto-rows: minmax:(200px auto);
+		margin: 3em;
+	}
+	h1 {
+	font: 40px Georgia, Serif;
+	margin: 0 0 10px 0;
+	}
+	header, nav, text, path, footer{
+		padding:20px;
+		background: rgba(192,192,192,0.5);
+  		-webkit-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+  		-moz-box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+ 		 box-shadow: 5px 5px 6px rgba(0, 0, 0, 0.3);
+
+	}
+	#pageHeader{
+		text-align:center;
+		grid-area:header;
+	}
+	#mainNav{
+		grid-area:nav;
+	}
+	#mainText{
+		grid-area:text;
+
+	}
+	#mainPath{
+		grid-area:path;
+	}
+	
+	#pageLeft{
+		grid-area:footer2;
+	}
+	#pageRight{
+		grid-area:footer3;
+	}
+		h1{
+			color: #black;
+		}
+		h1, p{
+			font-family:Arial;
+		}
+	
+.button {
+    display: block;
+    height: 30px;
+    width: 90px;
+    background: rgba(192, 192, 192, 0.5);
+    border: 2px solid rgba(192, 192, 192, 0.3);
+    color: rgba(0, 0, 0, 0.55);
+    text-align: center;
+    font: bold 1em/27px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    background: -webkit-linear-gradient(top, #364a69, #3e557a);
+    background: -moz-linear-gradient(top, #364a69, #3e557a);
+    background: -o-linear-gradient(top, #364a69, #3e557a);
+    background: -ms-linear-gradient(top, #364a69, #3e557a);
+    background: linear-gradient(top, #364a69, #3e557a);
+    text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+    padding:5px;
+}
+a.button {
+    text-decoration: none;
+    width: 10em;
+}
+a.button:hover {
+    background: #3d7a80;
+    background: -webkit-linear-gradient(top, #47618b, #506d9c);
+    background: -moz-linear-gradient(top, #47618b, #506d9c);
+    background: -o-linear-gradient(top, #47618b, #506d9c);
+    background: -ms-linear-gradient(top, #47618b, #506d9c);
+    background: linear-gradient(top, #47618b, #506d9c);
+}
+.buttonRight{
+	grid-column: 4/6;
+	grid-row: 3;
+}
+</style>
+</head>
+<body bgcolor=#3e557a>
+<header id=pageHeader><h1>The "Point"</h1></header>
+<title id=mainTitle>[Placeholder]</title>
+<nav id=mainNav><p>Navigation
+Menu</p>
+</head>
+<ul style="list-style-type:none">
+  <li><a class=button href="[placeholder]">Home Page</a></li>
+  <li><a class=button href="StartPage.html">Start Page</a></li>
+  <li><a class=button href=goBack() rel=nofollow”>Go Back</a>
+<script>
+function goBack() {
+    window.history.back();
+}
+</script>
+</li>
+</ul>
+</nav>
+<footer id=pageInfo>[Placeholder]</footer>
+<text id=mainText>
+	<p>You have a map.</p>
+	<br>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;It is just a map, unlike some maps. Some maps are incredibly intricate, with their flowing calligraphy or block lettered efficiency. Others are electronic, carved in stone, sown into the face a slice of toast, or even tattooed onto the back of a man named Dave - who might work in accounting. Even more maps contain top-views of exotic lands, implications of treasure, or merely the best route to a certain cubicle in a major accounting company office building. 
+	<br>
+	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nearly all maps, through a strange coincidence of fate, show a two dimensional answer. Sometimes a straight line from one place to another, some show a path towards a cache the owner deemed valuable, others just show a way from point A to point B (this path usually contains a bypass). There are rebel maps of course -those that simply must break free of the "norm" that is basic two dimensionalism- such as holographic maps that show 3-dimensional paths; these are usually just for show, or to confuse the simple folk and oft show nothing of any particular value.</p>
+	<br>
+	<p>Your map is none of these.</p>
+	<p>Your map lacks even two dimensions, defying the base laws of nature. Your map is simply a dot between your feet, eloquently titled-</p>
+	<br>
+	<p>You Are Here.</p>
+	<br>
+	</text>
+	<footer id=pageLeft><a class=button href="PathB/pathB1">[unwritten]</a></footer>
+	<footer id=pageRight><a class=button href="PathA/pathA1.html">Enter the Point!</a>
+	</footer>
+
+	<!--Honestly, I don't know if I will actually include the "path" grid square as an actual block showing the path history. It would be fairly complicated to write (and/or tedious). The first thought that comes to mind is manually coding in the path, adding to it on each page, essentially making it a set of links. This would be a larger and larger hassle as the projet gets bigger.-->
+	<path id=mainPath>[Path vs. No path]</path>
+</body>
+</html>
