@@ -100,7 +100,7 @@ Menu</p>
 <ul style="list-style-type:none">
   <li><a class=button href="[placeholder]">Home Page</a></li>
   <li><a class=button href="StartPage.html">Start Page</a></li>
-  <li><a class=button href=goBack() rel=nofollow”>Go Back</a>
+  <li><a class=button href="javascript:history.go(-1)" rel=nofollow”>Go Back</a>
 <script>
 function goBack() {
     window.history.back();
@@ -149,8 +149,9 @@ function goBack() {
 	<br>
 	<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
 	<br>
+</text>
 	<footer id=pageLeft><a class=button href="[leftOp]">[unwritten]</a></footer>
-	<footer id=pageRight><a class=button href="[rightOp]">Enter the Point!</a>
+	<footer id=pageRight><a class=button href="[rightOp]">[unwritten]</a>
 	</footer>
 	<!--Honestly, I don't know if I will actually include the "path" grid square as an actual block showing the path history. It would be fairly complicated to write (and/or tedious). The first thought that comes to mind is manually coding in the path, adding to it on each page, essentially making it a set of links. This would be a larger and larger hassle as the projet gets bigger.-->
 	<path id=mainPath>[Path vs. No path]</path>
